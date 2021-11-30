@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  position: absolute;
+  padding-top: 2vh;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 2px;
+
+  color: var(--light);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 700;
+}
+:root {
+  --red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --light: hsl(0, 0%, 100%);
+  --dark: hsl(0, 0%, 0%);
+
+  --accent: hsl(248, 32%, 49%);
+
+  --neutralDarkBlue: hsl(249, 10%, 26%);
+  --neutralGrayishBlue: hsl(246, 25%, 77%);
+}
+.container {
+  padding: 0 1.5rem;
+  padding-top: 6.125rem;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+
+  background: url(images/bg-intro-mobile.png);
+  background-size: cover;
+  background-color: var(--red);
+
+  padding-bottom: 1rem;
+}
+
+main {
+  position: relative;
+  display: grid;
+
+  text-align: center;
+  color: var(--light);
+}
+
+.text-content h1 {
+  font-size: clamp(1.5rem, 8vw, 3.125rem);
+  line-height: 2.5rem;
+}
+
+.text-content > p:first-of-type {
+  margin-top: 1.875rem;
+  color: var(--light);
+  opacity: 0.8;
+}
+
+.card,
+input {
+  width: 100%;
+}
+
+.card-holder {
+  margin-top: 4.375rem;
+}
+
+button {
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1.25rem 5rem;
+  border-radius: 10px;
+
+  transform: scale(1);
+  box-shadow: 0 7.5px 0px 0px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(1px);
+  transition: all 0.3s ease;
+}
+button:active {
+  /* transform: translateY(2px); */
+  transform: scale(0.9);
+  transition: all 0.3s ease;
+}
+.card-holder .card-offers {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+
+  background: var(--accent);
+  color: var(--neutralGrayishBlue);
+}
+
+.card-offers span {
+  color: var(--light);
+  font-weight: 700;
+}
+
+.card-form {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+
+  background: var(--light);
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+form input {
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1.25rem 1rem;
+  outline: none;
+  border: 1px solid var(--neutralGrayishBlue);
+
+  border-radius: 7.5px;
+
+  background: url(images/icon-error.svg) no-repeat;
+  background-position: right 7px center;
+  background-size: 0%;
+
+  transition: background-size 0.5s ease;
+}
+
+form input:focus {
+  outline: 1px solid var(--dark);
+}
+
+form p {
+  margin-bottom: 5px;
+}
+
+form p {
+  float: right;
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--red);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card-form button {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+
+  color: var(--light);
+  background: var(--Green);
+
+  text-transform: uppercase;
+  padding: 0 2.6rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1rem;
+  box-shadow: 0 5px 1px 0 hsl(154, 59%, 46%);
+}
+.card-form button:hover {
+  background: hsla(154, 59%, 51%, 0.8);
+}
+.card-form > p:last-of-type {
+  font-size: 0.65rem;
+  color: var(--neutralGrayishBlue);
+  padding: 0 1.375rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+}
+
+.card-form > p:last-of-type a {
+  font-weight: 700;
+  color: var(--red);
+  text-decoration: none;
+}
+
+.InputErrorShow {
+  background-size: 5%;
+  transition: background-size 0.5s ease;
+}
+
+.errorTextShow {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+@media (min-width: 45em) {
+  body {
+    display: flex;
+    flex-direction: column;
+    background: url(images/bg-intro-desktop.png);
+    background-size: cover;
+    background-color: var(--red);
+
+    padding: 0 2rem;
+  }
+
+  .container {
+    max-width: 68.75rem;
+    padding: 0;
+  }
+
+  main {
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 4.6rem;
+
+    align-items: center;
+  }
+
+  .text-content {
+    text-align: left;
+  }
+
+  .text-content h1 {
+    line-height: 3.5rem;
+  }
+  .card-holder {
+    margin-top: 0;
+  }
+
+  .card-form {
+    padding: 2.5rem;
+  }
+}
