@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://www.frontendmentor.io/solutions/base-apparel-tRKfcOqpQ)
-- Live Site URL: [Live site](https://vicgok.github.io/Base-Apparel/base.html)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/responsive-intro-component-signup-page-aANG5YgSH)
+- Live Site URL: [Live site](https://vicgok.github.io/Intro-component-signup/base.html)
 
 ## My process
 
