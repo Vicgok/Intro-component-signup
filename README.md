@@ -88,3 +88,4 @@ Users should be able to:
 
 - Frontend Mentor - [@Vicgok](https://www.frontendmentor.io/profile/Vicgok)
 - Twitter - [@Vigneshwaraa4](https://twitter.com/Vigneshwaraa4)
+- LinkedIn - [@Vigneshwaraa](www.linkedin.com/in/vigneshwaraa1217)
